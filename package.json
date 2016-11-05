@@ -4,7 +4,8 @@
   "description": "\"Chat application using websockets\"",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "production": "wepack -p",
+    "start": "webpack-dev-server"
   },
   "author": "",
   "license": "ISC",
@@ -12,11 +13,15 @@
     "babel-core": "^6.18.0",
     "babel-loader": "^6.2.7",
     "babel-preset-react": "^6.16.0",
-    "html-webpack-plugin": "^2.24.0"
+    "html-webpack-plugin": "^2.24.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
     "express": "^4.14.0",
     "pg": "^6.1.0",
-    "socket.io": "^1.5.1"
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "socket.io": "latest"
   }
 }
